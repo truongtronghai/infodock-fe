@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="primary">
+        <h1>Lorem ipsum dolor sit</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quasi
+          expedita animi enim odio reprehenderit? Reiciendis amet, officia,
+          autem, minus reprehenderit architecto aut debitis harum labore
+          officiis inventore eveniet ipsa?.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam
+          qui suscipit magni, reprehenderit doloremque accusamus, corrupti
+          maxime illo odio in laborum. Itaque enim, repellendus ipsa consequatur
+          eius aliquid odio?
+        </p>
+      </div>
+      <div class="secondary">
+        <div class="secondary-a"><p>A</p></div>
+        <div class="secondary-b">
+          <p>BBBBBBBBBBBBBBBBBB</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="call-out-row">
+      <div class="call-out">
+        <h1>Donut chart</h1>
+        <div id="chart"></div>
+        <div>
+          <a href="#" onclick="updateChart();return false;">Update chart</a>
+        </div>
+      </div>
+      <div class="call-out">
+        <h1>Column 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a id="googleLogin" href=""
+          ><img
+            src="./images/google_signin_buttons/web/2x/btn_google_signin_dark_normal_web@2x.png"
+        /></a>
+      </div>
+      <div class="call-out">
+        <h1>Column 1</h1>
+        <div>
+          <form
+            action="http://localhost:8000/crop_image/"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="file" id="fileName" name="file" />
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  background-color: beige;
+}
+
+.main-container {
+  display: flex;
+}
+
+.primary,
+.secondary,
+.secondary-a,
+.secondary-b {
+  flex: 1;
+}
+
+.secondary {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-a {
+  background-color: aqua;
+  display: flex;
+}
+
+.secondary-a p {
+  margin: auto;
+}
+
+.secondary-b {
+  background-color: coral;
+  display: flex;
+}
+
+.secondary-b p {
+  margin: auto;
+}
+
+.call-out-row {
+
+  margin: 40px auto 0 auto;
+}
+
+@media (min-width: 600px) {
+  .call-out-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.call-out {
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: 33%;
+  box-sizing: border-box;
+}
+
+.call-out:nth-child(1) {
+  background-color: bisque;
+}
+
+.call-out:nth-child(2) {
+  background-color: darkcyan;
+}
+
+.call-out:nth-child(3) {
+  background-color: chocolate;
+}
